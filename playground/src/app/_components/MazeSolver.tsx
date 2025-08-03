@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -40,7 +40,7 @@ const MazeSolver = () => {
   const { messages, setInput, isLoading, handleSubmit, setMessages } =
     useChat();
 
-  const parseMazeState = (mazeText: string): MazeData => {
+  const parseMazeState = useCallback((mazeText: string): MazeData => {
     try {
       const lines = mazeText
         .trim()
@@ -54,11 +54,27 @@ const MazeSolver = () => {
           [];
         const rowCells = [];
 
+        // Parse tokens - they should be in groups of 3: position, wall, marker
+        // But handle cases where tokens might not be perfectly grouped
         for (let i = 0; i < tokens.length; i += 3) {
-          const [row, col] = tokens[i].split("-").map(Number);
+          if (i + 2 >= tokens.length) break; // Need at least 3 tokens
+          
+          const positionToken = tokens[i];
           const wallToken = tokens[i + 1];
           const markerToken = tokens[i + 2];
 
+          // Parse position (format: "row-col")
+          const positionMatch = positionToken.match(/^(\d+)-(\d+)$/);
+          if (!positionMatch) {
+            console.warn(`Invalid position token: ${positionToken}`);
+            continue;
+          }
+          
+          const [, rowStr, colStr] = positionMatch;
+          const row = parseInt(rowStr, 10);
+          const col = parseInt(colStr, 10);
+
+          // Parse walls
           const walls: Record<string, boolean> = {};
           if (wallToken !== "no_wall" && wallToken.endsWith("_wall")) {
             const wallDirs = wallToken.slice(0, -5).split("_");
@@ -75,13 +91,17 @@ const MazeSolver = () => {
               markerToken !== "blank",
           });
         }
-        mazeData.push(rowCells);
+        
+        if (rowCells.length > 0) {
+          mazeData.push(rowCells);
+        }
       }
       return mazeData;
-    } catch {
-      throw new Error("Invalid maze format");
+    } catch (error) {
+      console.error("Parse error:", error);
+      throw new Error(`Invalid maze format: ${mazeText}`);
     }
-  };
+  }, []);
 
   interface MazeCell {
     row: number;
@@ -110,7 +130,7 @@ const MazeSolver = () => {
     return hasOrigin && hasTarget;
   };
 
-  const buildPathMap = (steps: MazeData[]) => {
+  const buildPathMap = useCallback((steps: MazeData[]) => {
     // Create a map of all cells that are part of the path
     const pathMap = new Map();
 
@@ -126,7 +146,7 @@ const MazeSolver = () => {
     });
 
     return pathMap;
-  };
+  }, []);
 
   const handleInitialMazeInput = (input: string) => {
     setMaze(input);
@@ -224,10 +244,22 @@ const MazeSolver = () => {
 
   useEffect(() => {
     try {
-      const steps = messages[1]?.content
-        .split(/Step \d+:/g)
-        .filter((step) => step.trim())
-        .map((step) => parseMazeState(step));
+      if (!messages[1]?.content) return;
+
+      // Split content by step markers and process each step
+      const stepSections = messages[1].content.split(/Step \d+:/g);
+      const steps = stepSections
+        .filter((section) => section.trim())
+        .map((section) => {
+          // Remove any leading text before the first <| token
+          const firstTokenIdx = section.indexOf("<|");
+          if (firstTokenIdx === -1) return null;
+          
+          // Extract only the lines that contain maze tokens
+          const mazeSection = section.slice(firstTokenIdx);
+          return parseMazeState(mazeSection);
+        })
+        .filter((step) => step !== null) as MazeData[];
 
       if (steps?.length > currentStepRef.current) {
         // Process steps to show complete path
@@ -237,15 +269,15 @@ const MazeSolver = () => {
           mazeStepsRef.current[stepIndex] = maze;
           return mazeStepsRef.current[0].map((_, rowIndex) => {
             return mazeStepsRef.current[0][rowIndex].map((_, cellIndex) => {
-              const cell = maze[rowIndex][cellIndex];
+              const cell = maze[rowIndex]?.[cellIndex];
 
-              const key = `${cell.row}-${cell.col}`;
+              const key = `${cell?.row}-${cell?.col}`;
               const isPartOfPath = pathMap.has(key);
               if (isPartOfPath) {
                 const isCurrentStep =
-                  cell.marker !== "blank" &&
-                  cell.marker !== "origin" &&
-                  cell.marker !== "target";
+                  cell?.marker !== "blank" &&
+                  cell?.marker !== "origin" &&
+                  cell?.marker !== "target";
 
                 const newData = {
                   ...cell,
@@ -265,8 +297,11 @@ const MazeSolver = () => {
         setIsPlaying(false);
         setError("");
       }
-    } catch {}
-  }, [messages]);
+    } catch (error) {
+      console.error("Error processing maze steps:", error);
+      setError("Failed to process maze steps.");
+    }
+  }, [messages, buildPathMap, parseMazeState]);
 
   useEffect(() => {
     if (typeof window !== "undefined" && window)
