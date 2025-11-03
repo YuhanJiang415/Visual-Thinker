@@ -1,0 +1,724 @@
+{
+    "model_name": "homebrewltd/AlphaMaze-v0.2-1.5B",
+    "timestamp": "2025-11-02T22:11:07.615419",
+    "overall_accuracy": 92.0,
+    "level_accuracies": {
+        "easy": {
+            "accuracy": 100.0,
+            "correct": 50,
+            "total": 50
+        },
+        "medium": {
+            "accuracy": 87.5,
+            "correct": 35,
+            "total": 40
+        },
+        "hard": {
+            "accuracy": 70.0,
+            "correct": 7,
+            "total": 10
+        }
+    },
+    "detailed_results": [
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_down_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|left_right_wall|><|origin|><|1-2|><|down_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_right_wall|><|target|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|up_left_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|up_down_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|up_left_right_wall|><|blank|><|2-1|><|left_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|up_left_wall|><|target|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|origin|><|3-2|><|up_down_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_wall|><|target|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|origin|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|up_down_left_wall|><|blank|><|1-3|><|down_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_down_left_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|up_down_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_down_left_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_right_wall|><|target|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|right_wall|><|blank|><|3-2|><|up_left_right_wall|><|origin|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|down|><|right|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_wall|><|blank|><|0-4|><|up_right_wall|><|target|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|origin|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|up_left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|up_down_left_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|left_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|up_left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|origin|><|2-2|><|left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|target|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|down|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|origin|><|2-1|><|down_left_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|target|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_down_right_wall|><|target|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|up_right_wall|><|origin|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|left|><|up|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|left_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|down_left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|down_left_right_wall|><|blank|><|3-4|><|left_right_wall|><|origin|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|target|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|origin|><|1-1|><|up_left_right_wall|><|blank|><|1-2|><|left_wall|><|blank|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|down_left_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|target|><|4-1|><|up_down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|down|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|right_wall|><|blank|><|1-3|><|up_left_right_wall|><|blank|><|1-4|><|down_left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|origin|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|target|>",
+            "solution": "<|right|><|right|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_right_wall|><|target|><|1-3|><|up_left_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|left_right_wall|><|origin|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_down_left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_down_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|origin|><|4-3|><|up_down_wall|><|target|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_down_left_wall|><|origin|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|left_right_wall|><|target|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|down_wall|><|blank|><|1-2|><|up_down_right_wall|><|blank|><|1-3|><|left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|down_right_wall|><|target|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|down_left_right_wall|><|blank|><|3-2|><|left_right_wall|><|origin|><|3-3|><|up_left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|origin|><|1-1|><|down_left_wall|><|target|><|1-2|><|down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|up_down_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_wall|><|blank|><|3-3|><|up_down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|down_left_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|target|><|3-1|><|up_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|origin|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|up|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|origin|><|0-3|><|up_down_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|down_right_wall|><|target|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|down|><|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|up_down_right_wall|><|origin|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|target|><|3-1|><|down_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|up_down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|down|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|origin|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|target|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_down_left_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_down_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|up_down_left_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|origin|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|target|>",
+            "solution": "<|down|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_right_wall|><|origin|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|target|><|1-1|><|up_down_left_wall|><|blank|><|1-2|><|down_wall|><|blank|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|left|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_down_left_wall|><|blank|><|2-2|><|down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|up_left_wall|><|target|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|origin|>",
+            "solution": "<|left|><|left|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_wall|><|origin|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|down_right_wall|><|target|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|up_left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|down|><|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|up_left_wall|><|target|><|2-3|><|up_down_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|up_left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|origin|><|4-2|><|down_right_wall|><|blank|><|4-3|><|down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|target|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|up_down_left_wall|><|blank|><|1-3|><|down_right_wall|><|origin|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_down_left_wall|><|blank|><|3-2|><|right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|down_left_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|up|><|left|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|origin|><|0-1|><|up_down_right_wall|><|blank|><|0-2|><|up_left_wall|><|target|><|0-3|><|up_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_right_wall|><|blank|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|down|><|right|><|right|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_right_wall|><|blank|><|1-2|><|left_wall|><|blank|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|down_left_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|up_right_wall|><|origin|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|target|>",
+            "solution": "<|down|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|up_down_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|target|><|4-1|><|down_right_wall|><|origin|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|down_left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|up_left_wall|><|target|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|down_left_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|up_left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|origin|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|up_down_right_wall|><|blank|><|1-3|><|up_down_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|down_left_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|up_down_wall|><|blank|><|3-3|><|down_right_wall|><|origin|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|target|><|4-1|><|down_right_wall|><|blank|><|4-2|><|up_down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|left|><|down|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_wall|><|target|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|up_left_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|down_right_wall|><|origin|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|up_down_left_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|target|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_right_wall|><|origin|><|2-1|><|left_right_wall|><|blank|><|2-2|><|down_left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_down_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_right_wall|><|target|><|0-3|><|up_left_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|left_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|up_down_left_wall|><|blank|><|2-3|><|up_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|origin|><|3-2|><|up_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|><|up|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|target|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_down_right_wall|><|blank|><|1-2|><|left_wall|><|origin|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|up_left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|origin|><|0-2|><|up_wall|><|blank|><|0-3|><|up_right_wall|><|target|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|down_left_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|up_left_right_wall|><|blank|><|2-4|><|down_left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|left_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|left_right_wall|><|blank|><|1-4|><|left_right_wall|><|target|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|down_left_right_wall|><|origin|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_right_wall|><|blank|><|4-3|><|down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|><|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|target|><|0-2|><|up_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|down_left_wall|><|origin|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|right_wall|><|blank|><|2-3|><|up_down_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|up_down_left_wall|><|blank|><|1-3|><|down_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|up_down_left_wall|><|origin|><|2-3|><|up_right_wall|><|blank|><|2-4|><|down_left_right_wall|><|blank|>\n<|3-0|><|left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|target|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|down|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|origin|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_down_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_wall|><|target|><|1-2|><|down_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|down_right_wall|><|blank|><|2-4|><|up_left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|right|><|down|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_right_wall|><|blank|><|0-3|><|up_down_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|no_wall|><|blank|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|up_left_right_wall|><|origin|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|target|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|target|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|down_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_right_wall|><|blank|><|2-3|><|down_left_right_wall|><|blank|><|2-4|><|left_right_wall|><|origin|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_down_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|target|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_down_left_wall|><|blank|><|2-2|><|up_down_wall|><|origin|><|2-3|><|down_right_wall|><|blank|><|2-4|><|up_left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|up_down_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|up_down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|right|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_down_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_right_wall|><|target|><|2-2|><|up_left_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|origin|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|left|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_down_left_wall|><|origin|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_down_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|down_left_wall|><|target|><|1-3|><|up_down_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_right_wall|><|blank|><|2-1|><|up_left_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|left_wall|><|origin|><|3-2|><|down_right_wall|><|blank|><|3-3|><|down_left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|target|>",
+            "solution": "<|down|><|right|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|target|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|origin|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|up|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_down_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|target|>\n<|2-0|><|up_left_right_wall|><|blank|><|2-1|><|down_left_right_wall|><|blank|><|2-2|><|up_left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|down_wall|><|origin|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_right_wall|><|origin|><|1-4|><|down_left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|up_down_left_wall|><|blank|><|4-4|><|down_right_wall|><|target|>",
+            "solution": "<|down|><|right|><|down|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "easy",
+            "maze": "<|0-0|><|up_left_right_wall|><|origin|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|up_down_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_right_wall|><|target|><|2-2|><|up_down_left_wall|><|blank|><|2-3|><|up_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|down|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|up_down_left_wall|><|blank|><|1-4|><|right_wall|><|target|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|up_left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|origin|><|3-1|><|up_down_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|up|><|up|><|up|><|right|><|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_right_wall|><|target|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|left_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|down_left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|down_left_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|up_down_left_wall|><|blank|><|2-4|><|right_wall|><|origin|>\n<|3-0|><|left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|><|left|><|up|><|up|><|up|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|target|>\n<|1-0|><|left_wall|><|origin|><|1-1|><|up_down_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|up_down_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|up_down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|up|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_down_wall|><|origin|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|target|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|left|><|left|><|down|><|right|><|down|><|left|><|right|><|right|>",
+            "is_correct": false,
+            "error": "Move 6 (left) is blocked at (3, 1)."
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|down_left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_right_wall|><|origin|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|up_down_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|target|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|up|><|left|><|down|><|left|><|down|><|right|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|down_left_right_wall|><|blank|><|1-3|><|left_right_wall|><|target|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_right_wall|><|blank|><|2-1|><|down_left_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|down_left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|origin|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|left|><|down|><|right|>",
+            "is_correct": false,
+            "error": "Move 3 (left) is blocked at (3, 2)."
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_right_wall|><|blank|><|0-2|><|up_down_left_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|left_right_wall|><|target|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|down_left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|origin|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|right|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|target|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|up_down_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|left_right_wall|><|origin|><|2-3|><|up_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|up_down_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|right|><|right|><|up|><|left|><|left|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|origin|><|1-1|><|up_down_left_wall|><|blank|><|1-2|><|up_down_wall|><|target|><|1-3|><|up_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|up_left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|up_down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|right|><|right|><|right|><|right|><|down|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_down_left_wall|><|blank|><|1-2|><|down_wall|><|blank|><|1-3|><|down_right_wall|><|target|><|1-4|><|down_left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_down_left_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_wall|><|origin|><|3-1|><|up_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|><|up|><|right|><|right|><|down|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|left_wall|><|blank|><|2-3|><|up_down_right_wall|><|blank|><|2-4|><|left_right_wall|><|target|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|left_right_wall|><|origin|><|3-3|><|up_down_left_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|><|right|><|up|><|right|><|down|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_down_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|up_down_left_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|up_left_wall|><|origin|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|target|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|right|><|down|><|left|><|left|><|left|><|left|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|up_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|down_left_right_wall|><|blank|><|1-4|><|left_right_wall|><|origin|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_down_wall|><|target|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|><|left|><|down|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_down_left_wall|><|origin|><|1-2|><|down_right_wall|><|blank|><|1-3|><|left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|up_wall|><|blank|><|3-3|><|up_down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|target|>",
+            "solution": "<|right|><|left|><|down|><|down|><|left|><|left|><|left|><|left|><|up|><|left|><|down|><|right|><|right|><|right|><|down|><|right|><|down|>",
+            "is_correct": false,
+            "error": "Move 3 (down) is blocked at (1, 1)."
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|target|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_right_wall|><|blank|><|1-2|><|up_left_right_wall|><|blank|><|1-3|><|up_left_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|origin|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|left_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|down_left_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|up|><|up|><|up|><|right|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|target|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_down_left_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_down_wall|><|origin|><|3-3|><|up_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|down|><|right|><|up|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_down_wall|><|target|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_down_right_wall|><|blank|><|3-3|><|up_left_wall|><|origin|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|left|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_down_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|up_wall|><|origin|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|target|>",
+            "solution": "<|down|><|left|><|down|><|right|><|right|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|target|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|down_right_wall|><|origin|><|3-2|><|left_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|up|><|up|><|up|><|right|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|up_left_wall|><|origin|><|1-3|><|up_down_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|up_left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_down_right_wall|><|blank|><|3-3|><|left_right_wall|><|target|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|><|left|><|down|><|right|><|right|><|down|><|right|><|up|>",
+            "is_correct": false,
+            "error": "Move 7 (down) is blocked at (3, 2)."
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_down_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|up_left_right_wall|><|origin|><|2-3|><|up_left_wall|><|target|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|down|><|right|><|right|><|up|><|left|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_down_left_wall|><|origin|><|2-2|><|up_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|target|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|right|><|down|><|left|><|down|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_down_wall|><|origin|><|1-2|><|up_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|up_down_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_wall|><|blank|><|3-3|><|up_down_right_wall|><|target|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|down|><|left|><|left|><|down|><|right|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|origin|><|1-1|><|up_left_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_down_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|target|><|3-2|><|up_left_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|down|><|down|><|down|><|right|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_right_wall|><|blank|><|0-3|><|up_left_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_wall|><|origin|><|1-2|><|up_down_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_right_wall|><|target|><|4-3|><|down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|down|><|right|><|down|><|left|><|down|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|up_left_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|right_wall|><|origin|>\n<|4-0|><|down_left_wall|><|target|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|up|><|left|><|left|><|left|><|down|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_down_left_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_wall|><|origin|><|2-3|><|down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|up_down_wall|><|target|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|left|><|left|><|down|><|right|><|down|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_wall|><|target|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|left_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|down_left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|right_wall|><|origin|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|up|><|left|><|left|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_down_left_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|left_right_wall|><|target|><|1-4|><|down_left_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|up_down_left_wall|><|blank|><|2-3|><|down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|down_right_wall|><|origin|><|4-3|><|down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|right|><|down|><|right|><|up|><|up|><|left|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_down_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_down_wall|><|origin|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|up_left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|target|>",
+            "solution": "<|left|><|down|><|right|><|down|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_down_left_wall|><|origin|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_right_wall|><|blank|><|1-1|><|left_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_right_wall|><|blank|><|3-2|><|left_right_wall|><|blank|><|3-3|><|down_left_wall|><|blank|><|3-4|><|right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|up_down_left_wall|><|target|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|down|><|down|><|down|><|down|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_down_wall|><|origin|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|down_left_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|down_left_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|up_down_right_wall|><|blank|><|3-3|><|up_left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|target|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|down|><|right|><|right|><|up|><|right|><|down|><|down|><|down|><|left|><|left|>",
+            "is_correct": false,
+            "error": "Move 3 (right) is blocked at (1, 2)."
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_down_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|left_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_right_wall|><|target|><|2-2|><|up_left_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|origin|><|3-1|><|down_left_wall|><|blank|><|3-2|><|down_wall|><|blank|><|3-3|><|up_right_wall|><|blank|><|3-4|><|up_left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|down|><|right|><|right|><|right|><|up|><|left|><|left|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|target|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|origin|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_right_wall|><|blank|><|3-2|><|up_down_left_wall|><|blank|><|3-3|><|up_down_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|right|><|up|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|target|><|3-1|><|up_down_left_wall|><|blank|><|3-2|><|up_down_wall|><|blank|><|3-3|><|up_down_wall|><|origin|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|left|><|left|><|left|><|left|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|down_left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|down_wall|><|blank|><|3-3|><|up_down_right_wall|><|target|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|origin|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|left|><|up|><|right|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|down_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_wall|><|blank|><|2-1|><|up_right_wall|><|origin|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_down_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|up_down_left_wall|><|blank|><|3-3|><|up_wall|><|blank|><|3-4|><|right_wall|><|target|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|down|><|left|><|down|><|right|><|right|><|right|><|up|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_right_wall|><|blank|><|0-4|><|up_left_right_wall|><|blank|>\n<|1-0|><|left_wall|><|target|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|right_wall|><|origin|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|left|><|up|><|left|><|left|><|left|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|down_left_wall|><|target|><|1-3|><|up_down_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|down_wall|><|blank|><|2-2|><|up_down_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|blank|><|3-1|><|up_left_wall|><|blank|><|3-2|><|up_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|origin|><|4-3|><|down_right_wall|><|blank|><|4-4|><|down_left_right_wall|><|blank|>",
+            "solution": "<|right|><|up|><|up|><|right|><|up|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "medium",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|origin|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|down_left_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|down_left_right_wall|><|target|><|2-1|><|left_right_wall|><|blank|><|2-2|><|up_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|down_right_wall|><|blank|>\n<|3-0|><|up_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|down_left_right_wall|><|blank|><|3-3|><|up_down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|down|><|left|><|up|><|left|><|left|><|down|><|down|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|origin|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|down_left_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|up_left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_wall|><|blank|><|3-2|><|up_down_right_wall|><|blank|><|3-3|><|left_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|target|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|right|><|down|><|left|><|down|><|down|><|down|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|up_left_wall|><|blank|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|down_right_wall|><|target|><|2-2|><|left_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|up_down_left_wall|><|blank|><|3-1|><|up_down_wall|><|blank|><|3-2|><|down_right_wall|><|blank|><|3-3|><|up_left_wall|><|origin|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|down|><|left|>",
+            "is_correct": false,
+            "error": "Candidate solution did not reach the target. Ended at (4, 2) but target is at (2, 1)"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|target|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_down_left_wall|><|blank|><|1-2|><|up_down_wall|><|origin|><|1-3|><|up_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|up_right_wall|><|blank|><|2-3|><|left_right_wall|><|blank|><|2-4|><|left_right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_right_wall|><|blank|><|3-3|><|left_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|up_down_left_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|right|><|down|><|down|><|right|><|up|><|up|><|up|><|left|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|up_left_wall|><|blank|><|1-2|><|down_right_wall|><|blank|><|1-3|><|down_left_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|left_wall|><|origin|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|down_left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_wall|><|target|><|4-2|><|down_right_wall|><|blank|><|4-3|><|up_down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|right|><|up|><|left|><|left|><|down|><|down|><|down|><|down|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|up_right_wall|><|blank|><|1-2|><|up_left_wall|><|origin|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|down_left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|down_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|left_wall|><|blank|><|3-1|><|up_down_wall|><|target|><|3-2|><|up_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|up_down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|down|><|right|><|right|><|down|><|left|><|down|><|left|><|up|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_down_right_wall|><|blank|>\n<|1-0|><|left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|up_right_wall|><|blank|><|1-3|><|up_down_left_wall|><|blank|><|1-4|><|up_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_right_wall|><|blank|><|2-2|><|down_left_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|down_right_wall|><|origin|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|left_wall|><|blank|><|3-2|><|up_right_wall|><|target|><|3-3|><|up_down_left_wall|><|blank|><|3-4|><|up_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|><|left|><|up|><|left|><|up|><|left|><|down|><|down|><|down|><|down|><|right|><|up|><|right|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_down_left_wall|><|blank|><|0-1|><|up_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|up_left_wall|><|target|><|1-1|><|down_right_wall|><|blank|><|1-2|><|up_left_right_wall|><|blank|><|1-3|><|up_left_wall|><|blank|><|1-4|><|down_right_wall|><|blank|>\n<|2-0|><|left_right_wall|><|blank|><|2-1|><|up_left_wall|><|blank|><|2-2|><|down_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|up_right_wall|><|origin|>\n<|3-0|><|down_left_wall|><|blank|><|3-1|><|down_right_wall|><|blank|><|3-2|><|up_left_right_wall|><|blank|><|3-3|><|up_left_wall|><|blank|><|3-4|><|down_right_wall|><|blank|>\n<|4-0|><|up_down_left_wall|><|blank|><|4-1|><|up_down_wall|><|blank|><|4-2|><|down_wall|><|blank|><|4-3|><|down_wall|><|blank|><|4-4|><|up_down_right_wall|><|blank|>",
+            "solution": "<|left|><|up|><|right|><|up|><|left|><|left|><|left|><|down|><|left|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_wall|><|target|><|0-1|><|up_down_wall|><|blank|><|0-2|><|up_down_right_wall|><|blank|><|0-3|><|up_left_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|left_wall|><|blank|><|1-1|><|up_down_wall|><|blank|><|1-2|><|up_down_wall|><|blank|><|1-3|><|down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_right_wall|><|blank|><|2-3|><|up_left_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|down_right_wall|><|origin|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_right_wall|><|blank|><|4-1|><|down_left_wall|><|blank|><|4-2|><|down_right_wall|><|blank|><|4-3|><|up_down_left_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|up|><|right|><|up|><|up|><|left|><|down|><|left|><|left|><|left|><|up|>",
+            "is_correct": true,
+            "error": "Candidate solution is correct"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_right_wall|><|blank|><|0-1|><|up_left_wall|><|blank|><|0-2|><|up_down_wall|><|blank|><|0-3|><|up_down_wall|><|blank|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_wall|><|blank|><|1-1|><|down_wall|><|blank|><|1-2|><|up_down_wall|><|target|><|1-3|><|up_down_right_wall|><|blank|><|1-4|><|left_right_wall|><|blank|>\n<|2-0|><|up_left_wall|><|blank|><|2-1|><|up_down_wall|><|blank|><|2-2|><|up_down_wall|><|blank|><|2-3|><|up_down_wall|><|blank|><|2-4|><|right_wall|><|blank|>\n<|3-0|><|left_right_wall|><|blank|><|3-1|><|up_left_right_wall|><|blank|><|3-2|><|up_left_wall|><|blank|><|3-3|><|up_down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_right_wall|><|blank|><|4-2|><|down_left_wall|><|origin|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|right|><|right|><|up|><|up|><|left|><|left|><|left|><|left|><|down|><|down|><|right|><|up|>",
+            "is_correct": false,
+            "error": "Candidate solution did not reach the target. Ended at (3, 1) but target is at (1, 2)"
+        },
+        {
+            "level": "hard",
+            "maze": "<|0-0|><|up_left_wall|><|blank|><|0-1|><|up_right_wall|><|blank|><|0-2|><|up_left_wall|><|blank|><|0-3|><|up_wall|><|origin|><|0-4|><|up_right_wall|><|blank|>\n<|1-0|><|down_left_right_wall|><|blank|><|1-1|><|down_left_wall|><|blank|><|1-2|><|right_wall|><|blank|><|1-3|><|left_right_wall|><|blank|><|1-4|><|down_left_right_wall|><|blank|>\n<|2-0|><|up_down_left_wall|><|blank|><|2-1|><|up_right_wall|><|blank|><|2-2|><|left_right_wall|><|blank|><|2-3|><|down_left_wall|><|blank|><|2-4|><|up_right_wall|><|blank|>\n<|3-0|><|up_left_right_wall|><|target|><|3-1|><|left_right_wall|><|blank|><|3-2|><|down_left_wall|><|blank|><|3-3|><|up_down_right_wall|><|blank|><|3-4|><|left_right_wall|><|blank|>\n<|4-0|><|down_left_wall|><|blank|><|4-1|><|down_wall|><|blank|><|4-2|><|up_down_wall|><|blank|><|4-3|><|up_down_wall|><|blank|><|4-4|><|down_right_wall|><|blank|>",
+            "solution": "<|left|>",
+            "is_correct": false,
+            "error": "Candidate solution did not reach the target. Ended at (0, 2) but target is at (3, 0)"
+        }
+    ]
+}

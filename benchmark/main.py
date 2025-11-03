@@ -121,3 +121,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+
+# python main.py --engine-type hf --model-name "homebrewltd/AlphaMaze-v0.2-1.5B" --instruction-type "alphamaze" --max-tokens 20000 --temperature 0.6 --batch-size 4
